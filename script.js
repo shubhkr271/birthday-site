@@ -67,7 +67,7 @@ function spawnEmoji() {
     ? ["💖","💘","💕","❤️","💝"][Math.floor(Math.random() * 5)]
     : emojiSet[Math.floor(Math.random() * emojiSet.length)];
 
-  e.style.fontSize = 42 + Math.random() * 20 + "px";
+  e.style.fontSize = 55 + Math.random() * 30 + "px";
 
   // 🚫 Protect QR scan zone
   let left;
