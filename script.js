@@ -49,7 +49,7 @@ function startBeatSyncedEmojis() {
   const BEAT_INTERVAL = 520;
 
   emojiBeatInterval = setInterval(() => {
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 4; i++) {
       spawnEmoji();
     }
   }, BEAT_INTERVAL);
