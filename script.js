@@ -4,6 +4,8 @@ const input = document.getElementById("passwordInput");
 const errorMsg = document.getElementById("errorMsg");
 const loveLetter = document.getElementById("loveLetter");
 const music = document.getElementById("bgMusic");
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
 
 const surpriseBtn = document.getElementById("surpriseBtn");
 const surpriseModal = document.getElementById("surpriseModal");
@@ -236,3 +238,13 @@ surpriseModal.onclick = e => {
     }
   }
 };
+document.querySelectorAll(".memory-card img").forEach(img => {
+  img.addEventListener("click", () => {
+    modalImage.src = img.src;
+    imageModal.classList.add("show");
+  });
+});
+
+imageModal.addEventListener("click", () => {
+  imageModal.classList.remove("show");
+});
